@@ -1,6 +1,6 @@
 # What's this?
 Set Top and Bottom buttons on your browser.
-This script is used on AdGuard Pro for Android as Extension.
+This script can be used on AdGuard Pro for Android as Extension.
 
 # License
 MIT License
