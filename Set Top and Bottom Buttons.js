@@ -158,7 +158,7 @@ function create_btn_element() {
 			// if scroll up
 			varUpButton.style.display = (varScrolled > 0)  ? "" : "none";
 			// if scroll down
-			varDownButton.style.display = (varDiffHeight - 10 >= varScrolled)  ? "" : "none";
+			varDownButton.style.display = (varDiffHeight >= varScrolled)  ? "" : "none";
 		}; // end of function
 	} // end if
 } // end of function
