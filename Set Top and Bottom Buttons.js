@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Set Top and Bottom buttons
 // @description Set Top and Bottom buttons on browser (no Jquery) 
-// @version 1.01
+// @version 1.02
 // @author PermanentWave
 // @license Copyright (c) 2020 PermanentWave Released under the MIT license https://opensource.org/licenses/mit-license.php
 // @include *
@@ -48,7 +48,7 @@ function fncMoveUp() {
 function fncMoveDown() { 
     var varDocumentElement = document.documentElement;
     var varBottom = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    window.scrollTo(0, varBottom*1.01);
+    window.scrollTo(0, varBottom*1.05);
     varDownTimer = setTimeout(fncMoveDown, varTimeOut);
 } // end of function
 
