@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Set Top and Bottom buttons
 // @description Set Top and Bottom buttons on browser (no Jquery) 
-// @version 1.0
+// @version 1.01
 // @author PermanentWave
 // @license Copyright (c) 2020 PermanentWave Released under the MIT license https://opensource.org/licenses/mit-license.php
 // @include *
@@ -44,11 +44,11 @@ function fncMoveUp() {
     varUpTimer = setTimeout(fncMoveUp, varTimeOut);
 } // end of function
 
-// move downn
+// move down
 function fncMoveDown() { 
     var varDocumentElement = document.documentElement;
-    var varBottom = varDocumentElement.scrollHeight - varDocumentElement.clientHeight + 1;
-    window.scrollTo(0, varBottom);
+    var varBottom = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    window.scrollTo(0, varBottom*1.01);
     varDownTimer = setTimeout(fncMoveDown, varTimeOut);
 } // end of function
 
@@ -84,15 +84,12 @@ function scrollTo(element, to, duration) {
     animateScroll();
 } // end of function
 
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
+// easing
 Math.easeInOutQuad = function (varCurrentTime, varStartValue, varChangeInValue, varDuration) {
     varCurrentTime /= varDuration/2;
-    if (varCurrentTime < 1) return varChangeInValue/2*varCurrentTime*varCurrentTime + varStartValue;
+    if (varCurrentTime < 1) return varChangeInValue/2 * varCurrentTime * varCurrentTime + varStartValue;
     varCurrentTime--;
-    return -varChangeInValue/2 * (varCurrentTime*(varCurrentTime-2) - 1) + varStartValue;
+    return -varChangeInValue/2 * (varCurrentTime * (varCurrentTime - 2) - 1) + varStartValue;
 };
 
 // add css
@@ -157,11 +154,11 @@ function create_btn_element() {
 		// add event scroll
 		window.onscroll = function() { 
             var varScrolled = window.pageYOffset || document.documentElement.scrollTop, 
-            varDiffHeight = document.body.scrollHeight - window.innerHeight;
+            varDiffHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 			// if scroll up
 			varUpButton.style.display = (varScrolled > 0)  ? "" : "none";
-			// if scroll dn
-			varDownButton.style.display = (varDiffHeight > varScrolled)  ? "" : "none";
+			// if scroll down
+			varDownButton.style.display = (varDiffHeight >= varScrolled)  ? "" : "none";
 		}; // end of function
 	} // end if
 } // end of function
