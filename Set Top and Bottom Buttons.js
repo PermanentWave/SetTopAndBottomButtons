@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Set Top and Bottom buttons
 // @description Set Top and Bottom buttons on browser (no Jquery) 
-// @version 1.02
+// @version 1.03
 // @author PermanentWave
 // @license Copyright (c) 2020 PermanentWave Released under the MIT license https://opensource.org/licenses/mit-license.php
 // @include *
@@ -158,7 +158,7 @@ function create_btn_element() {
 			// if scroll up
 			varUpButton.style.display = (varScrolled > 0)  ? "" : "none";
 			// if scroll down
-			varDownButton.style.display = (varDiffHeight >= varScrolled)  ? "" : "none";
+			varDownButton.style.display = (varDiffHeight + 10  >= varScrolled)  ? "" : "none";
 		}; // end of function
 	} // end if
 } // end of function
