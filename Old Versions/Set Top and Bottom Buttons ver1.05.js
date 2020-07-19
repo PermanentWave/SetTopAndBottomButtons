@@ -66,7 +66,7 @@ function fncMoveDown() {
 
 // document scroll
 function fncGetScroll(varScrolledStep) { 
-	var varDocument = document,
+	var	varDocument = document,
 		varDocumentBody = varDocument.body,
 		varDocumentElement = varDocument.documentElement,
 		varClient = "client" + varScrolledStep,
