@@ -14,6 +14,7 @@ Ver 1.01
 Ver 1.02 Change scroll amount 1% (x1.01) -> 5% (x1.05)  
 Ver 1.03 Test Change  
 Ver 1.04 Undo Change  
+Ver 1.05 Optimization script  
 
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
@@ -31,3 +32,4 @@ Ver 1.01
 Ver 1.02 スクロールの増加量を1%から5%へ変更  
 Ver 1.03 試験的変更 (最下部～最下部10pxの間は矢印が出ないように修正)  
 Ver 1.04 Ver 1.03の変更をロールバック  
+Ver 1.05 関数の最適化  
