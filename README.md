@@ -1,6 +1,7 @@
 # What's this?
 Set Top and Bottom buttons on your browser.  
-This script can be used on AdGuard Pro for Android as Extension.  
+This script is debuged with AdGuard Pro for Android as Extension.  
+You can use this script on your website such as blog.
 
 # License
 MIT License
@@ -30,7 +31,8 @@ Optimization script
 
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
-AdGuard Pro for Android上にて拡張機能として使用します。  
+AdGuard Pro for Android上にて拡張機能としてデバッグしています。  
+が、ブログ等ウェブサイト等で(多分)動作します。
 
 # ライセンス
 MIT License
