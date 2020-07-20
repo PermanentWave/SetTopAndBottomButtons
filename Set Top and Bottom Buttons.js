@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name Set Top and Bottom buttons for AdGuard Pro
-// @description Set Top and Bottom buttons on browser
-// @version 1.05
+// @name Set Top and Bottom buttons
+// @description Set Top and Bottom buttons on your browser
+// @version 1.06
 // @author PermanentWave
 // @license Copyright (c) 2020 PermanentWave Released under the MIT license https://opensource.org/licenses/mit-license.php
 // @include *
-// @icon https://pbs.twimg.com/profile_images/1247511314965999621/dVQak652_400x400.png
+// @icon https://avatars0.githubusercontent.com/u/68002384
 // @run-at document-end
 // @grant none
 // ==/UserScript==
@@ -41,14 +41,14 @@ function fncAddStyle(varCSS) {
 } // end of function
 
 // figure out if this is moz || IE because they use documentElement
-var	varHtmlElement = fncDocumentHeight(),
+var varHtmlElement = fncDocumentHeight();
 // timer
-	varUpTimer,
-	varDownTimer,
+var varUpTimer;
+var varDownTimer;
 // speed by
-	varTimeOut = 0, // edit this value
+var varTimeOut = 0; // edit this value
 // z-index
-	varZIndex = 0; // edit this value
+var varZIndex = 1001; // edit this value
 
 // move up
 function fncMoveUp() { 
@@ -66,20 +66,20 @@ function fncMoveDown() {
 
 // document scroll
 function fncGetScroll(varScrolledStep) { 
-	var	varDocument = document,
-		varDocumentBody = varDocument.body,
-		varDocumentElement = varDocument.documentElement,
-		varClient = "client" + varScrolledStep,
-		varScrolledStep = "scroll" + varScrolledStep;
+	var varDocument = document;
+	var varDocumentBody = varDocument.body;
+	var varDocumentElement = varDocument.documentElement;
+	var varClient = "client" + varScrolledStep;
+	var varScrolledStep = "scroll" + varScrolledStep;
 	return /CSS/.test(varDocument.compatMode)? (varDocumentElement[varClient]< varDocumentElement[varScrolledStep]) : (varDocumentBody[varClient]< varDocumentBody[varScrolledStep])
 } // end of function
 
 // add css
 function fncShareCSS(){ 
 	// variables
-	var	varString='',
-		varImgUp,
-		varImgDown;
+	var varString='';
+	var varImgUp;
+	var varImgDown;
 	
 	// img vs button
 	varImgUp = 'data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAYAAACAl21KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB+SURBVDhPY1i1atV/amAGahgCMoNhaIGlS5cKAp19BoRBbLJcj2QILDJINwzoAmMgfoclIkBixkS5DI8hMJcRNgxoSBoOl6CnNZBhaVhdBjWE1MSJahjQkA4KEmYH2GUrV66cSYEhYB+AzKBtFiHkQqKiH6Ro1CDCQTWgYQQAs81DU0G/83sAAAAASUVORK5CYII=';
@@ -97,12 +97,13 @@ function fncShareCSS(){
 // main
 function fncCreateButtonElement() { 
 	// get scroll
-	var	varUpButton,
-		varDownButton, 
-		varScrollTop,
-		varDocumentHeight = fncDocumentHeight(),
-		varHeight = fncGetScroll('Height');
-	// exit
+	var varUpButton;
+	var varDownButton;
+	var varScrollTop;
+	var varDocumentHeight = fncDocumentHeight();
+	var varHeight = fncGetScroll('Height');
+	var varClickFlag = 0;
+	// exit	var
 	if(!varHeight) { return; } // end if
 	
 	// add css
@@ -131,20 +132,31 @@ function fncCreateButtonElement() {
 		// add event click
 		varUpButton.addEventListener('click', fncMoveUp, false);
 		varUpButton.addEventListener('click', function(){clearTimeout(varUpTimer);}, false);
+		varUpButton.addEventListener('click', function(){varClickFlag = -1;}, false);
 		
 		varDownButton.addEventListener('click', fncMoveDown, false);
 		varDownButton.addEventListener('click', function(){clearTimeout(varDownTimer);}, false);
+		varDownButton.addEventListener('click', function(){varClickFlag = 1;}, false);
 		
+		// if scroll
 		window.onscroll = function() { 
-			var	varScrollTop = window.pageYOffset || varDocumentHeight.scrollTop, 
-				varScrollHeight = varDocumentHeight.scrollHeight,
-				varClientHeight = varDocumentHeight.clientHeight,
-				varClientTop = varDocumentHeight.clientTop;
+			var varScrollTop = window.pageYOffset || varDocumentHeight.scrollTop;
+			var varScrollHeight = varDocumentHeight.scrollHeight;
+			var varClientHeight = varDocumentHeight.clientHeight;
+			var varClientTop = varDocumentHeight.clientTop;
 			
 			// if scroll up
 			varUpButton.style.display = (varScrollTop > 0)  ? "" : "none";
 			// if scroll down
 			varDownButton.style.display = (varScrollHeight - varClientHeight - varClientTop - varScrollTop > 0 )  ? "" : "none";
+			// if click
+			if (varClickFlag < 0) {
+				varUpButton.style.display = "none";
+				varClickFlag = 0;
+			} else if (varClickFlag > 0) {
+				varDownButton.style.display = "none";
+				varClickFlag = 0;
+			} // end if
 		}; // end of function
 		
 	} // end if
