@@ -27,7 +27,10 @@ Ver 1.05
 Optimization script  
 
 Ver 1.06  
-Optimization script
+Optimization script  
+
+Ver 1.07  
+BugFix  
 
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
@@ -58,4 +61,7 @@ Ver 1.05
 関数の最適化  
 
 Ver 1.06  
-処理の最適化
+処理の最適化  
+
+Ver 1.07  
+バグ修正  
