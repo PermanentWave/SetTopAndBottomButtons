@@ -24,13 +24,16 @@ Ver 1.04
 Undo Change  
 
 Ver 1.05  
-Optimization script  
+Optimization function  
+(Remove no-used function)  
 
 Ver 1.06  
 Optimization script  
+(Remove button when button is clicked)  
 
 Ver 1.07  
 BugFix  
+(Get correct bottom position)  
 
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
@@ -59,9 +62,12 @@ Ver 1.03の変更をロールバック
 
 Ver 1.05  
 関数の最適化  
+(不要な関数の削除)
 
 Ver 1.06  
 処理の最適化  
+(押したボタンは常に非表示になる処理に変更)  
 
 Ver 1.07  
 バグ修正  
+(最下部が検出できない場合があったバグを修正)
