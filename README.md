@@ -25,7 +25,7 @@ Undo Change
 
 Ver 1.05  
 Optimization function  
-(Remove no-used function)  
+(Remove no-used function, all browser support)  
 
 Ver 1.06  
 Optimization script  
@@ -34,6 +34,10 @@ Optimization script
 Ver 1.07  
 BugFix  
 (Get correct bottom position)  
+
+Ver 1.08  
+Add "Auto Hide" function  
+Change method  
 
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
@@ -62,7 +66,7 @@ Ver 1.03の変更をロールバック
 
 Ver 1.05  
 関数の最適化  
-(不要な関数の削除)
+(不要な関数の削除、ほとんどのブラウザのサポート)
 
 Ver 1.06  
 処理の最適化  
@@ -71,3 +75,7 @@ Ver 1.06
 Ver 1.07  
 バグ修正  
 (最下部が検出できない場合があったバグを修正)
+
+Ver 1.08  
+自動でボタンを非表示にする機能を追加  
+一部動作変更  
