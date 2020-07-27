@@ -3,7 +3,7 @@
 // @description Set Top and Bottom buttons on your browser
 // @version 1.08
 // @author PermanentWave
-// @license Copyright (c) 2020 PermanentWave Released under the MIT license https://opensource.org/licenses/mit-license.php
+// @license Copyright (c) 2020 PermanentWave Released under the MIT license https://github.com/PermanentWave/SetTopAndBottomButtons/blob/master/LICENSE
 // @include *
 // @icon http://github.com/PermanentWave.png
 // @run-at document-end
