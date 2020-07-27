@@ -38,6 +38,7 @@ BugFix
 Ver 1.08  
 Add "Auto Hide" function  
 Change method  
+(Change to refer license URL)  
 
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
@@ -79,3 +80,4 @@ Ver 1.07
 Ver 1.08  
 自動でボタンを非表示にする機能を追加  
 一部動作変更  
+ライセンスのURL変更  
