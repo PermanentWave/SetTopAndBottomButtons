@@ -40,6 +40,12 @@ Add "Auto Hide" function
 Change method  
 (Change to refer license URL)  
 
+Ver 1.09  
+Introduce function as class  
+Change define (var -> let, const)  
+All function return value or true  
+Optimization  
+
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
@@ -81,3 +87,9 @@ Ver 1.08
 自動でボタンを非表示にする機能を追加  
 一部動作変更  
 (ライセンスのURL変更)  
+
+Ver 1.09  
+クラスの概念を導入  
+varの宣言をletもしくはconstに書き換えた  
+全ての関数が何らかの値かtrueを返すようにした  
+その他最適化  
