@@ -100,15 +100,9 @@ function SetTopBottomButtons( ) {
 		return letScrollBottom;
 	}; // end of function
 
-	// document scroll
-	function fncGetScroll( letScrolledStep ) { 
-		let letDocumentBody = document.body;
-		let letDocumentElement = document.documentElement;
-		let letClient = "client" + letScrolledStep;
-		letScrolledStep = "scroll" + letScrolledStep;
 
-		return /CSS/.test( document.compatMode )? ( letDocumentElement[letClient]< letDocumentElement[letScrolledStep] ) : ( letDocumentBody[letClient]< letDocumentBody[letScrolledStep] )
-	}; // end of function
+	// document scroll
+	function fncGetScroll( ) { return ( letElement.clientHeight < letElement.scrollHeight ); }; // end of function
 
 	// add css
 	function fncShareCSS( ){ 
