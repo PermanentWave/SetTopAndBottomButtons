@@ -100,7 +100,6 @@ function SetTopBottomButtons( ) {
 		return letScrollBottom;
 	}; // end of function
 
-
 	// document scroll
 	function fncGetScroll( ) { return ( letElement.clientHeight < letElement.scrollHeight ); }; // end of function
 
