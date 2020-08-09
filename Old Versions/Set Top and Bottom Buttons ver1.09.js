@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Set Top and Bottom buttons
 // @description Set Top and Bottom buttons on your browser
-// @version 1.10
+// @version 1.09
 // @author PermanentWave
 // @license Copyright (c) 2020 PermanentWave Released under the MIT license https://github.com/PermanentWave/SetTopAndBottomButtons/blob/master/LICENSE
 // @include *
@@ -101,7 +101,14 @@ function SetTopBottomButtons( ) {
 	}; // end of function
 
 	// document scroll
-	function fncGetScroll( ) { return ( letElement.clientHeight < letElement.scrollHeight ); }; // end of function
+	function fncGetScroll( letScrolledStep ) { 
+		let letDocumentBody = document.body;
+		let letDocumentElement = document.documentElement;
+		let letClient = "client" + letScrolledStep;
+		letScrolledStep = "scroll" + letScrolledStep;
+
+		return /CSS/.test( document.compatMode )? ( letDocumentElement[letClient]< letDocumentElement[letScrolledStep] ) : ( letDocumentBody[letClient]< letDocumentBody[letScrolledStep] )
+	}; // end of function
 
 	// add css
 	function fncShareCSS( ){ 

@@ -46,6 +46,9 @@ Change define (var -> let, const)
 All function return value or true  
 Optimization  
 
+Ver 1.10  
+Optimize  
+
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
@@ -93,3 +96,6 @@ Ver 1.09
 varの宣言をletもしくはconstに書き換えた  
 全ての関数が何らかの値かtrueを返すようにした  
 その他最適化  
+
+Ver 1.10  
+処理の最適化
