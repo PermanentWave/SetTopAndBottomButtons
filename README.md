@@ -49,6 +49,9 @@ Optimization
 Ver 1.10  
 Optimize  
 
+Ver 1.11  
+Optimize  
+
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
@@ -99,3 +102,6 @@ varの宣言をletもしくはconstに書き換えた
 
 Ver 1.10  
 処理の最適化
+
+Ver 1.11  
+不要な演算の削除  
