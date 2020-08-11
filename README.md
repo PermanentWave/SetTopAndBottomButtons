@@ -1,12 +1,14 @@
-# What's this?
+## What's this?
 Set Top and Bottom buttons on your browser.  
 This script is debuged with AdGuard Pro (for Windows/Android) as Extension.  
 You can use this script on your website such as blog.
 
-# License
+## License
 MIT License
 
-# History
+## History
+<details><summary>Show all History</summary>  
+
 Ver 1.00  
 First Release  
 
@@ -51,20 +53,23 @@ Optimize
 
 Ver 1.11  
 Optimize  
+</details>  
 
 Ver1.11.1  
 Change let -> const element  
 Add description
 
-# このプログラムについて
+## このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
 が、ブログ等ウェブサイト等で(多分)動作します。
 
-# ライセンス
+## ライセンス
 MIT License
 
-# 更新履歴
+## 更新履歴
+<details><summary>変更履歴の表示</summary>  
+  
 Ver 1.00  
 リリース  
 
@@ -109,6 +114,7 @@ Ver 1.10
 
 Ver 1.11  
 不要な演算の削除  
+</details>  
 
 Ver 1.11.1  
 読み込んだElementを定数とした  
