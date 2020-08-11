@@ -52,6 +52,10 @@ Optimize
 Ver 1.11  
 Optimize  
 
+Ver1.11.1  
+Change let -> const element  
+Add description
+
 # このプログラムについて
 ブラウザ上にページトップとページボトムのボタンを追加します。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
@@ -105,3 +109,7 @@ Ver 1.10
 
 Ver 1.11  
 不要な演算の削除  
+
+Ver 1.11.1  
+読み込んだElementを定数とした  
+説明の追記等  
