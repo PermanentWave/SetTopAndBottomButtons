@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name AdGuard Set buttons to jump top and bottom
+// @name AdGuard Set buttons to jump to top and bottom
 // @name:ja AdGuard 最上部/最下部 移動ボタン
 // @description Set buttons to jump top and bottom on the Web page. The primary use is userscript extension for AdGuard.
 // @description:ja 最上部/最下部へ移動するボタンをブラウザ上に追加します
