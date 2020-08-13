@@ -54,11 +54,15 @@ Optimize
 
 Ver 1.11  
 Optimize  
-</details>  
 
 Ver1.11.1  
 Change let -> const element  
-Add description
+Add description  
+
+</details>  
+
+Ver1.11.2  
+Change description  
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
@@ -116,8 +120,12 @@ Ver 1.10
 
 Ver 1.11  
 不要な演算の削除  
-</details>  
 
 Ver 1.11.1  
 読み込んだElementを定数とした  
 説明の追記等  
+
+</details>  
+
+Ver 1.11.2  
+説明の変更  
