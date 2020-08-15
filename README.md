@@ -1,5 +1,5 @@
 ## What's this?
-Set buttons to jump top and bottom on the Web page.  
+Set buttons to jump to top and bottom on the Web page.  
 The primary use is userscript extension for AdGuard.  
 This script is debuged with AdGuard Pro (for Windows/Android) as Extension.  
 You can use this script on your website such as blog.
