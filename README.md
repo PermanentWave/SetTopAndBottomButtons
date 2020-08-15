@@ -66,7 +66,7 @@ Change description
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
-AdGuardのuserscriptとしての運用が主な用途です。
+AdGuardのuserscriptとしての運用が主な用途です。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
 が、ブログ等ウェブサイト等で(多分)動作します。
 
