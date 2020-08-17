@@ -1,13 +1,8 @@
 // ==UserScript==
-// @name AdGuard Set buttons to jump to top and bottom
-// @name:ja AdGuard 最上部/最下部 移動ボタン
-// @description Set buttons to jump to top and bottom on the Web page. The primary use is userscript extension for AdGuard.
-// @description:ja 最上部/最下部へ移動するボタンをブラウザ上に追加します
-// @version 1.11.2
+// @name Set Top and Bottom buttons
+// @description Set Top and Bottom buttons on your browser
+// @version 1.11
 // @author PermanentWave
-// @homepageURL https://github.com/PermanentWave/SetTopAndBottomButtons
-// @downloadURL https://github.com/PermanentWave/SetTopAndBottomButtons/raw/master/Set%20Top%20and%20Bottom%20Buttons.js
-// @supportURL https://github.com/PermanentWave/SetTopAndBottomButtons/issues
 // @license Copyright (c) 2020 PermanentWave Released under the MIT license https://github.com/PermanentWave/SetTopAndBottomButtons/blob/master/LICENSE
 // @include *
 // @icon http://github.com/PermanentWave.png
@@ -19,7 +14,7 @@
 function SetTopBottomButtons( ) {
 
 	// load element
-	const letElement = fncSelectElement( );
+	let letElement = fncSelectElement( );
 	// timer
 	let letUpTimer;
 	let letDownTimer;
@@ -220,11 +215,11 @@ function SetTopBottomButtons( ) {
 			// add event loading
 			window.addEventListener( 'load', fncRestartTimer, false );
 
-			// add event click up button
+			// add event click
 			letUpButton.addEventListener( 'click', fncMoveUp, false );
 			letUpButton.addEventListener( 'click', function( ){ clearTimeout( letUpTimer ); }, false );
 			letUpButton.addEventListener( 'click', function( ){ letClickFlag = -1; }, false );
-			// add event click down button
+
 			letDownButton.addEventListener( 'click', fncMoveDown, false );
 			letDownButton.addEventListener( 'click', function( ){ clearTimeout( letDownTimer ); }, false );
 			letDownButton.addEventListener( 'click', function( ){ letClickFlag = 1; }, false );
@@ -232,6 +227,7 @@ function SetTopBottomButtons( ) {
 			// add event scroll
 			window.addEventListener( 'scroll', fncRestartTimer, false );
 			window.addEventListener( 'scroll', fncOnScroll, false );
+
 		} // end if
 
 		return true;
