@@ -4,6 +4,9 @@ The primary use is userscript extension for AdGuard.
 This script is debuged with AdGuard Pro (for Windows/Android) as Extension.  
 You can use this script on your website such as blog.
 
+## Update URL
+https://github.com/PermanentWave/SetTopAndBottomButtons/raw/master/SetTopAndBottomButtons.user.js
+
 ## License
 MIT License
 
@@ -59,16 +62,24 @@ Ver1.11.1
 Change let -> const element  
 Add description  
 
-</details>  
-
 Ver1.11.2  
 Change description  
+
+</details>  
+
+Ver1.12  
+Change filename  
+Change Update URL  
+Change order of function  
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
 AdGuardのuserscriptとしての運用が主な用途です。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
 が、ブログ等ウェブサイト等で(多分)動作します。
+
+## アップデート URL
+https://github.com/PermanentWave/SetTopAndBottomButtons/raw/master/SetTopAndBottomButtons.user.js
 
 ## ライセンス
 MIT License
@@ -125,7 +136,12 @@ Ver 1.11.1
 読み込んだElementを定数とした  
 説明の追記等  
 
-</details>  
-
 Ver 1.11.2  
 説明の変更  
+
+</details>  
+
+Ver 1.12  
+ファイル名の変更  
+アップデートURLの変更  
+関数の順番を変更  
