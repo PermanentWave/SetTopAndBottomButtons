@@ -5,7 +5,7 @@ This script is debuged with AdGuard Pro (for Windows/Android) as Extension.
 You can use this script on your website such as blog.
 
 ## Update URL
-https://github.com/PermanentWave/SetTopAndBottomButtons/raw/master/SetTopAndBottomButtons.user.js
+https://raw.githubusercontent.com/PermanentWave/SetTopAndBottomButtons/master/SetTopAndBottomButtons.user.js
 
 ## License
 MIT License
@@ -79,7 +79,7 @@ AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグし�
 が、ブログ等ウェブサイト等で(多分)動作します。
 
 ## アップデート URL
-https://github.com/PermanentWave/SetTopAndBottomButtons/raw/master/SetTopAndBottomButtons.user.js
+https://raw.githubusercontent.com/PermanentWave/SetTopAndBottomButtons/master/SetTopAndBottomButtons.user.js
 
 ## ライセンス
 MIT License
