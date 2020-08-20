@@ -65,12 +65,15 @@ Add description
 Ver1.11.2  
 Change description  
 
-</details>  
-
 Ver1.12  
 Change filename  
 Change Update URL  
 Change order of function  
+
+</details>  
+
+Ver1.13  
+Change button images  
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
@@ -139,9 +142,12 @@ Ver 1.11.1
 Ver 1.11.2  
 説明の変更  
 
-</details>  
-
 Ver 1.12  
 ファイル名の変更  
 アップデートURLの変更  
 関数の順番を変更  
+
+</details>  
+
+Ver 1.13  
+ボタンのアイコン変更  
