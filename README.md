@@ -70,10 +70,13 @@ Change filename
 Change Update URL  
 Change order of function  
 
-</details>  
-
 Ver1.13  
 Change button images  
+
+</details>  
+
+Ver2.0  
+Optimize  
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
@@ -147,7 +150,10 @@ Ver 1.12
 アップデートURLの変更  
 関数の順番を変更  
 
-</details>  
-
 Ver 1.13  
 ボタンのアイコン変更  
+
+</details>  
+
+Ver 2.0  
+処理の刷新  
