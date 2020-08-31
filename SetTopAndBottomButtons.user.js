@@ -32,11 +32,11 @@ function SetTopBottomButtons( ) {
 	const AUTO_HIDE_MODE = true; // edit this value
 
 	// create element
-	function fncCreateElement( varNumber ) { return document.createElement( varNumber ); }; // end of function
+	function fncCreateElement( varNumber ) { return document.createElement( varNumber ); }; // end function
 
 	// select element
 	function fncSelectElement( ) {
-		// high priority used
+		// high priority use
 		if ( 'scrollingElement' in document ) {
 			return document.scrollingElement;
 		// firefox
@@ -49,7 +49,7 @@ function SetTopBottomButtons( ) {
 		} else {
 			return document.body;
 		} // end if
-	}; // end of function
+	}; // end function
 
 	// add style
 	function fncAddStyle( varCSS ) {
@@ -62,7 +62,7 @@ function SetTopBottomButtons( ) {
 		} // end if
 
 		return true;
-	}; // end of function
+	}; // end function
 
 	// add css
 	function fncShareCSS( ) {
@@ -83,37 +83,37 @@ function SetTopBottomButtons( ) {
 		fncAddStyle( '' + letString );
 
 		return true;
-	}; // end of function
+	}; // end function
 
 	// move up
 	function fncMoveUp( ) { 
 		window.scrollBy( 0, -fncScrollTop( LOAD_ELEMENT ) );
 
 		return true;
-	}; // end of function
+	}; // end function
 
 	// move down
 	function fncMoveDown( ) { 
 		window.scrollBy( 0, fncScrollBottom( LOAD_ELEMENT ) );
 
 		return true;
-	}; // end of function
+	}; // end function
 
-	// get position from top to client top
-	function fncScrollTop( varDocumentElement ) { return window.pageYOffset || varDocumentElement.scrollTop; }; // end of function
+	// get position from page top to client top
+	function fncScrollTop( varDocumentElement ) { return window.pageYOffset || varDocumentElement.scrollTop; }; // end function
 
-	// get position from bottom to client bottom
-	function fncScrollBottom( varDocumentElement ) { return varDocumentElement.scrollHeight - varDocumentElement.clientHeight - fncScrollTop( varDocumentElement ); }; // end of function
+	// get position from page bottom to client bottom
+	function fncScrollBottom( varDocumentElement ) { return varDocumentElement.scrollHeight - varDocumentElement.clientHeight - fncScrollTop( varDocumentElement ); }; // end function
 
 	// compare height
-	function fncCompareHeight( ) { return ( LOAD_ELEMENT.clientHeight < LOAD_ELEMENT.scrollHeight ); }; // end of function
+	function fncCompareHeight( ) { return ( LOAD_ELEMENT.clientHeight < LOAD_ELEMENT.scrollHeight ); }; // end function
 	
 	// main
 	function fncCreateButtonElement( ) { 
 		let letUpButton;
 		let letDownButton;
 
-		// switch visible buttons
+		// show buttons
 		function fncVisibleButtons( ) {
 			// if scroll up
 			letUpButton.style.display = ( fncScrollTop( LOAD_ELEMENT ) > 0 ) ? "" : "none";
@@ -123,7 +123,7 @@ function SetTopBottomButtons( ) {
 			return true;
 		}; // end function
 
-		// switch invisible buttons
+		// hide buttons
 		function fncInvisibleButtons( ) {
 			if ( AUTO_HIDE_MODE ) {
 				letUpButton.style.display = "none";
@@ -174,7 +174,7 @@ function SetTopBottomButtons( ) {
 		} // end if
 
 		return true;
-	}; // end of function
+	}; // end function
 
 	// exit function
 	if ( window.self != window.top ) { return; }; // end if
@@ -184,7 +184,7 @@ function SetTopBottomButtons( ) {
 	fncCreateButtonElement( );
 
 	return true;
-}; // end of function
+}; // end function
 
 // call
 SetTopBottomButtons( );
