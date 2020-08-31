@@ -73,9 +73,12 @@ Change order of function
 Ver1.13  
 Change button images  
 
+Ver2.0  
+Optimize  
+
 </details>  
 
-Ver2.0  
+Ver2.0.1  
 Optimize  
 
 ## このプログラムについて
@@ -153,7 +156,10 @@ Ver 1.12
 Ver 1.13  
 ボタンのアイコン変更  
 
-</details>  
-
 Ver 2.0  
 処理の刷新  
+
+</details>  
+
+Ver 2.0.1  
+処理の順番の変更  

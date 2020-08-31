@@ -141,9 +141,6 @@ function SetTopBottomButtons( ) {
 			return true;
 		}; // end function
 
-		// if unnecessary
-		if( !fncCompareHeight( ) ) { return; }; // end if
-
 		// add css
 		fncShareCSS( ); 
 		
