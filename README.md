@@ -1,8 +1,9 @@
 ## What's this?
 Set buttons to jump to top and bottom on the Web page.  
-The primary use is userscript extension for AdGuard.  
+The main purpose of this is to serve as a userscript for AdGuard.  
 This script is debuged with AdGuard Pro (for Windows/Android) as Extension.  
-You can use this script on your website such as blog.
+This userscript can be used with Greasemonkey, Tampermonkey and AdGuard.  
+This userscript can be used on a PC, but you can use the Home key and End key instead.  
 
 ## Update URL
 https://raw.githubusercontent.com/PermanentWave/SetTopAndBottomButtons/master/SetTopAndBottomButtons.user.js
@@ -76,16 +77,20 @@ Change button images
 Ver2.0  
 Optimize  
 
+Ver2.0.1  
+Optimize  
+
 </details>  
 
-Ver2.0.1  
+Ver2.0.2  
 Optimize  
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
 AdGuardのuserscriptとしての運用が主な用途です。  
 AdGuard Pro (for Windows/Android)上にて拡張機能としてデバッグしています。  
-が、ブログ等ウェブサイト等で(多分)動作します。
+Greasemonkey、Tampermonkey、AdGuardで使用可能です。
+PCでも使用できますが、HomeキーやEndキーで代用できます。
 
 ## アップデート URL
 https://raw.githubusercontent.com/PermanentWave/SetTopAndBottomButtons/master/SetTopAndBottomButtons.user.js
@@ -159,7 +164,10 @@ Ver 1.13
 Ver 2.0  
 処理の刷新  
 
-</details>  
-
 Ver 2.0.1  
 処理の順番の変更  
+
+</details>  
+
+Ver 2.0.2  
+一部関数名の変更  
