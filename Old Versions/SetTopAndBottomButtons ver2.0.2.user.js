@@ -145,7 +145,7 @@ function SetTopBottomButtons( ) {
 		fncShareCSS( ); 
 		
 		// if load element
-		if( LOAD_ELEMENT ) { 
+		if ( LOAD_ELEMENT ) { 
 			// create DOM element
 			letUpButton = fncCreateElement( 'span' );
 			letDownButton = fncCreateElement( 'span' );
