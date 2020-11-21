@@ -74,16 +74,20 @@ Change order of function
 Ver1.13  
 Change button images  
 
-Ver2.0  
+Ver2.0.0  
 Optimize  
 
 Ver2.0.1  
 Optimize  
 
-</details>  
-
 Ver2.0.2  
 Optimize  
+
+</details>  
+
+Ver2.1.0  
+Add Lefty mode  
+Add Offset Y-Position  
 
 ## このプログラムについて
 ブラウザ上にページ最上部とページ最下部へ移動するボタンを追加します。  
@@ -167,7 +171,11 @@ Ver 2.0
 Ver 2.0.1  
 処理の順番の変更  
 
-</details>  
-
 Ver 2.0.2  
 一部関数名の変更  
+
+</details>  
+
+Ver 2.1.0  
+左利きモードの追加  
+表示位置のY座標を変更する定数を導入した  
