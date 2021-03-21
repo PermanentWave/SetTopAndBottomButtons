@@ -1,3 +1,5 @@
+[Readme japanese version](https://github.com/PermanentWave/SetTopAndBottomButtons/blob/master/README_ja.md)
+
 ## What's this?
 Set buttons to jump to top and bottom on the Web page.  
 The main purpose of this is to serve as a userscript for AdGuard.  
