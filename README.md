@@ -1,4 +1,4 @@
-[Readme japanese version](https://github.com/PermanentWave/SetTopAndBottomButtons/blob/master/README_ja.md)
+[Readme japanese version/日本語版のReadmeはこちら](https://github.com/PermanentWave/SetTopAndBottomButtons/blob/master/README_ja.md)
 
 ## What's this?
 Set buttons to jump to top and bottom on the Web page.  
